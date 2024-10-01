@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar Section -->
+ <!-- Navbar Section -->
+<header>
+    <div class="container">
+      <div class="logo">My Portfolio</div>
+      <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav id="navbar">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <h1>Hi, I'm <span>Osagie Confidence</span></h1>
+      <p>A Passionate Web Developer Creating Interactive Experiences</p>
+      <a href="#projects" class="btn-primary" style="list-style: none; text-decoration: none;">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a web developer with experience in creating modern, responsive web applications. My skills include HTML, CSS, JavaScript, and various frameworks. I am passionate about building user-friendly experiences that solve real-world problems.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/project1.png" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>A modern courier website.</p>
+          <a href="https://quickswiftdropexpress.com/index.html" style="list-style: none; text-decoration: none;" class="btn-secondary">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="images/capi.png" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>A banking website.</p>
+          <a href="https://capirangebk.com/" class="btn-secondary">View Project</a>
+        </div>
+        <!-- <div class="project-card">
+          <img src="project3.jpg" alt="Project 3">
+          <h3>Project 3</h3>
+          <p>A real-time chat application.</p>
+          <a href="#" class="btn-secondary">View Project</a>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <ul class="skills-list">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Git & GitHub</li>
+        <li>Responsive Design</li>
+        <li>Python & FrameWork Djngo</li>
+      </ul>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>I'd love to hear from you! Please fill out the form below to get in touch.</p>
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scipt.js"></script>
+  <!-- WhatsApp Chat Widget -->
+<div id="whatsapp-chat" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    <a href="https://wa.me/+23409053857258" target="_blank" style="display: flex; align-items: center; background-color: #25D366; color: white; border-radius: 50px; padding: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); list-style: none; text-decoration: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 30px; height: 30px; margin-right: 10px;">
+        Chat with me !
+    </a>
+</div>
+
+</body>
+</html>

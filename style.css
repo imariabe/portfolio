@@ -41,14 +41,14 @@
     }
   
     .nav-links {
-      display: none; /* Hide navigation links by default */
+      display: flex; /* Hide navigation links by default */
       flex-direction: column; /* Stack links */
       position: absolute;
       top: 60px; /* Adjust based on your header height */
       right: 0;
       background-color: #282828; /* Match header background */
       width: 100%;
-      padding: 10px 0;
+      padding: 10px 20px;
       z-index: 10; /* Ensure it appears above other content */
       transition: max-height 0.3s ease; /* Smooth transition */
       max-height: 0; /* Initially hidden */
@@ -58,6 +58,7 @@
     .nav-links.show {
       display: flex; /* Show navigation links when toggled */
       max-height: 300px; /* Set a max height when shown */
+      padding: 10px 20px;
     }
   }
   
@@ -106,10 +107,12 @@
     text-align: center;
     color: white;
     width: 100%;
+    opacity: 1;
   }
   
   .hero-content h1 {
     font-size: 3.5rem;
+    
   }
   
   .hero-content h1 span {
@@ -125,7 +128,9 @@
     text-transform: uppercase;
     transition: background 0.3s ease;
     margin-top: 10px;
-    
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    border-radius: 12px;
   }
   
   .btn-primary:hover {
@@ -140,6 +145,7 @@
   .projects {
     background-color: #2a2a2a; /* Dark background for projects */
     padding: 80px 0;
+    
   }
   
   .project-grid {
@@ -154,6 +160,11 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     padding:  20px;
     transition: transform 0.3s ease;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
  
   }
   

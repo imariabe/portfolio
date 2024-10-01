@@ -1,3 +1,4 @@
+
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -18,5 +19,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   
 
 
-
-  

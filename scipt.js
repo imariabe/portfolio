@@ -9,13 +9,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
   
-  // Toggle the hamburger menu
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.querySelector('.nav-links');
+  const menuIcon = document.getElementById('menu-icon');
+  const navbar = document.getElementById('navbar');
   
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+  menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
   });
   
-
 

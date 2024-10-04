@@ -21,46 +21,61 @@
   
 
   /* Hamburger Menu Styles */
-.hamburger {
-    display: none; /* Hidden by default */
+/* Hide the navbar and show the menu icon on mobile */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left:400px;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color:whitesmoke;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+  
+@media screen and (max-width: 768px) {
+  nav {
+    display: none; /* Hide the navbar on mobile screens */
+  }
+
+  .menu-icon {
+    display: flex; /* Display hamburger menu on mobile screens */
     flex-direction: column;
     cursor: pointer;
   }
-  
-  .line {
-    height: 3px;
+
+  .menu-icon .bar {
     width: 25px;
-    background-color: #f0f0f0; /* Light color for lines */
+    height: 3px;
+    background-color: #f77f00;
     margin: 4px 0;
+    transition: 0.3s;
   }
-  
-  /* Media Queries for Hamburger Menu */
-  @media (max-width: 768px) {
-    .hamburger {
-      display: flex; /* Show hamburger on small screens */
-    }
-  
-    .nav-links {
-      display: flex; /* Hide navigation links by default */
-      flex-direction: column; /* Stack links */
-      position: absolute;
-      top: 60px; /* Adjust based on your header height */
-      right: 0;
-      background-color: #282828; /* Match header background */
-      width: 100%;
-      padding: 10px 20px;
-      z-index: 10; /* Ensure it appears above other content */
-      transition: max-height 0.3s ease; /* Smooth transition */
-      max-height: 0; /* Initially hidden */
-      overflow: hidden; /* Prevent overflow */
-    }
-  
-    .nav-links.show {
-      display: flex; /* Show navigation links when toggled */
-      max-height: 300px; /* Set a max height when shown */
-      padding: 10px 20px;
-    }
+
+  /* Display the navbar when the menu icon is clicked */
+  nav.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #282828;
+    width: 100%;
+    text-align: center;
   }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+}
+
   
   .container {
     width: 80%;

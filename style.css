@@ -26,13 +26,12 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
-  margin-left:400px;
 }
 
 .menu-icon .bar {
   width: 25px;
   height: 3px;
-  background-color:whitesmoke;
+  background-color: #f77f00;
   margin: 4px 0;
   transition: 0.3s;
 }
@@ -46,6 +45,7 @@
     display: flex; /* Display hamburger menu on mobile screens */
     flex-direction: column;
     cursor: pointer;
+    margin-left: 285px;
   }
 
   .menu-icon .bar {
